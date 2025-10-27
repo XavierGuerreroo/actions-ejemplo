@@ -2,7 +2,7 @@ name: Test y Deploy OOP Exercise
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master, main ]
 
 jobs:
   test-and-deploy:

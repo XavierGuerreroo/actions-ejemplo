@@ -14,7 +14,6 @@ class Person:
             first_name (str): El nombre de la persona
             last_name (str): El apellido de la persona
         """
-        # Guardamos los valores como atributos del objeto
         self.first_name = first_name
         self.last_name = last_name
     
@@ -26,9 +25,9 @@ class Person:
         palabra en mayúscula (capitalizado), incluso si hay espacios.
         
         Returns:
-            str: Nombre completo capitalizado correctamente.
+            str: Nombre completo capitalizado
         """
-        # .title() pone en mayúscula la primera letra de cada palabra
+        # El método title() pone en mayúscula la primera letra de cada palabra
         return f"{self.first_name.title()} {self.last_name.title()}"
 
 
@@ -39,7 +38,7 @@ if __name__ == "__main__":
     p2 = Person("MARIA", "LOPEZ")
     p3 = Person("cArLoS", "gOnZaLeZ")
     p4 = Person("juan carlos", "de la cruz")
-
+    
     # Imprimir usando __str__ automáticamente
     print(p1)  # Juan Perez
     print(p2)  # Maria Lopez
